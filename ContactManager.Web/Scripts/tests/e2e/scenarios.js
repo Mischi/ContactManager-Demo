@@ -1,21 +1,5 @@
 ﻿/* http://docs.angularjs.org/guide/dev_guide.e2e-testing */
 
-
-//var myAppDev = angular.module('contactmanagere2e', ['contactmanager', 'ngMockE2E']);
-//myAppDev.run(function ($httpBackend) {
-//    contacts = [{ firstName: 'phone1' }, { firstName: 'phone2' }];
-
-
-//    $httpBackend.whenGET('/api/contacts').respond(contacts);
-
-
-//    $httpBackend.whenPOST('/contacts').respond(function (method, url, data) {
-//        contacts.push(angular.fromJSON(data));
-//    });
-
-//    $httpBackend.whenGET(/^\/templates\//).passThrough();
-
-//});
 describe('ContactManager App', function() {
     'use strict';
 

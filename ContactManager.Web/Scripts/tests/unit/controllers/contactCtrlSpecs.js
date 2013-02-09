@@ -68,7 +68,7 @@
     it('should call contactService.saveContact with $scope.contact and add the result to $scope.contacts', function () {
         //Arrange
         var expected = { firstName: 'Fabian' };
-        scope.contact = expected
+        scope.contact = expected;
 
 
         //Act
