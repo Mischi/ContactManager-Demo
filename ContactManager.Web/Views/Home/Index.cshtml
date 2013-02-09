@@ -1,0 +1,16 @@
+﻿<div class="navbar navbar-fixed-top" data-ng-controller="NavigationCtrl">
+    <div class="navbar-inner">
+        <a class="brand" href="/">Contact Manager</a>
+        <ul class="nav">
+            <li id="menuitem-home" data-ng-class="{active: location.path() == '/'}">
+                <a href="/">Home</a>
+            </li>
+            <li id="menuitem-contacts" data-ng-class="{active: location.path() == '/contacts'}">
+                <a href="/contacts">Contacts</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container-fluid" data-ng-view="">
+</div>

@@ -1,0 +1,26 @@
+﻿<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="inputFirstname">Firstname</label>
+        <div class="controls">
+            <input type="text" id="inputFirstname" placeholder="Firstname" data-ng-model="data.firstName" required>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputLastname">Lastname</label>
+        <div class="controls">
+            <input type="text" id="inputLastname" placeholder="Lastname" data-ng-model="data.lastName" required>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputAge">Age</label>
+        <div class="controls">
+            <input type="number" id="inputAge" data-ng-model="data.age">
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <button id="add-contact-cancel" type="reset" class="btn" data-ng-click="cancel()">Cancel</button>
+            <button id="add-contact-save" type="submit" class="btn btn-primary" data-ng-click="ok()">Add</button>
+        </div>
+    </div>
+</form>

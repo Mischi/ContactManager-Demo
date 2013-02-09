@@ -1,0 +1,12 @@
+﻿<button id="add-contact" class="btn" data-ng-click="addContact()">Add Contact</button>
+@*<div data-sidebar="" data-data="contact" data-template="contactaddView" data-cancel="clearContact" data-ok="saveContact"></div>*@
+<sidebar data="contact" template="'templates/contact-add.html'" cancel="clearContact" ok="saveContact" />
+<div class="row-fluid">
+    <div class="span12">
+        <div class="contactlist">
+            <div class="container-contact" data-ng-repeat="contact in contacts">
+                <div class="contact">{{contact.firstName}}</div>
+            </div>
+        </div>
+    </div>
+</div>
