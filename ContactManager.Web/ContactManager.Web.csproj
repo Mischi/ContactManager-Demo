@@ -406,6 +406,7 @@
     <Content Include="Scripts\tests\unit\controllers\homeCtrlSpecs.js" />
     <Content Include="Scripts\tests\unit\controllers\navigationCtrlSpecs.js" />
     <Content Include="Scripts\tests\unit\controllers\contactCtrlSpecs.js" />
+    <Content Include="Scripts\tests\unit\services\contactServiceSpecs.js" />
     <Content Include="testacular-e2e.conf.js" />
     <Content Include="testacular-unit.conf.js" />
     <Content Include="Web.config" />
@@ -491,7 +492,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>33257</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:20943/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
