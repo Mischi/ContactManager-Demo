@@ -6,6 +6,7 @@ SinglePageApp Demo with
 
 * [AngularJS](http://angularjs.org/) 
 * [JQuery](http://jquery.com/) 
+* [Jasmine](http://pivotal.github.com/jasmine/) 
 * [Bootstrap](http://twitter.github.com/bootstrap/)
 * [ASP.NET MVC](http://www.asp.net/mvc)
 
