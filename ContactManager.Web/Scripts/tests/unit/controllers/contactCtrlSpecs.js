@@ -1,4 +1,13 @@
-﻿describe('ContactCtrl', function () {
+﻿//reference test dependencies to make http://chutzpah.codeplex.com/ happy  
+
+/// <reference path="\Scripts\angular-1.1.2\angular.js" />
+/// <reference path="\Scripts\angular-1.1.2\angular-mocks.js" />
+
+/// <reference path="\Scripts\app\app.js" />
+/// <reference path="\Scripts\app\controllers\contactCtrl.js" />
+/// <reference path="\Scripts\app\services\contactService.js" />
+
+describe('ContactCtrl', function () {
     'use strict';
 
     var scope, ctrl, contactServiceMock;

@@ -395,6 +395,7 @@
     <Content Include="Scripts\angular-1.1.2\angular.min.js.map">
       <DependentUpon>angular.js</DependentUpon>
     </Content>
+    <Content Include="chutzpah.json" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

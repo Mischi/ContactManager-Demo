@@ -1,0 +1,5 @@
+﻿{
+	"Framework": "jasmine",
+	"TestHarnessLocationMode" : "SettingsFileAdjacent",
+	"RootReferencePathMode": "SettingsFileDirectory"
+}
