@@ -19,7 +19,7 @@ namespace ContactManager.Web.Tests.Controllers
 
             var result = controller.Index() as ViewResult;
 
-            Assert.IsInstanceOfType(result.ViewBag.ngApp, typeof(string)); 
+            Assert.IsInstanceOfType(result.ViewBag.ngApp, typeof(string));
         }
     }
 }
