@@ -18,8 +18,9 @@ namespace ContactManager.Web
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/app/app.js",
                         "~/Scripts/app/Controllers/*.js",
-                        "~/Scripts/app/Directives/*.js",
-                        "~/Scripts/app/Services/*.js"));
+                                                "~/Scripts/app/Services/*.js",
+                        "~/Scripts/app/Directives/*.js"));
+
 
             bundles.Add(new StyleBundle("~/css/all").Include(
                         "~/Content/bootstrap.css",

@@ -387,9 +387,11 @@
     <Content Include="Scripts\angular-1.1.2\version.txt" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\appE2E.js" />
+    <Content Include="Scripts\app\controllers\fileUploadCtrl.js" />
     <Content Include="Scripts\app\controllers\homeCtrl.js" />
     <Content Include="Scripts\app\controllers\navigationCtrl.js" />
     <Content Include="Scripts\app\controllers\contactCtrl.js" />
+    <Content Include="Scripts\app\directives\fileupload.js" />
     <Content Include="Scripts\app\directives\sidebar.js" />
     <Content Include="Scripts\app\services\contactService.js" />
     <Content Include="Scripts\angular-1.1.2\angular.min.js.map">
@@ -406,6 +408,8 @@
     <Content Include="Scripts\tests\unit\controllers\homeCtrlSpecs.js" />
     <Content Include="Scripts\tests\unit\controllers\navigationCtrlSpecs.js" />
     <Content Include="Scripts\tests\unit\controllers\contactCtrlSpecs.js" />
+    <Content Include="Scripts\tests\unit\directives\fileuploadSpecs.js" />
+    <Content Include="Scripts\tests\unit\directives\sidebarSpecs.js" />
     <Content Include="Scripts\tests\unit\services\contactServiceSpecs.js" />
     <Content Include="testacular-e2e.conf.js" />
     <Content Include="testacular-unit.conf.js" />
