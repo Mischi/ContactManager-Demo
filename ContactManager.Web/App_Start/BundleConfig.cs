@@ -11,6 +11,7 @@ namespace ContactManager.Web
             bundles.Add(new ScriptBundle("~/js/all").Include(
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/angular-1.1.2/angular.js",
+                        "~/Scripts/canvas-to-blob.js",
 #if INTEGRATION
                         "~/Scripts/angular-1.1.2/angular-mocks.js",
                         "~/Scripts/app/appE2E.js",
@@ -18,7 +19,7 @@ namespace ContactManager.Web
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/app/app.js",
                         "~/Scripts/app/Controllers/*.js",
-                                                "~/Scripts/app/Services/*.js",
+                        "~/Scripts/app/Services/*.js",
                         "~/Scripts/app/Directives/*.js"));
 
 

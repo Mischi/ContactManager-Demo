@@ -1,5 +1,4 @@
 ﻿<form name="contactform" class="form-horizontal">
-    <canvas id="resizeArea" class="hidden"></canvas>
     <div class="control-group">
         <label class="control-label" for="inputFirstname">Firstname</label>
         <div class="controls">
@@ -21,7 +20,13 @@
     <div class="control-group">
         <label class="control-label" for="inputImage">Image</label>
         <div class="controls">
-            <fileupload id="inputImage" data-ng-model="data.image" />
+            <imageupload 
+                input-id="inputImage"
+                original-image="data.imageBig"        
+                resize-image="data.image"
+                resize-quality="0.7"
+                resize-max-height="320"
+                resize-max-width="270" />
         </div>
     </div>
     <div class="control-group">

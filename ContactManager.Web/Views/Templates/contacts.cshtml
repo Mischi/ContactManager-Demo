@@ -5,7 +5,9 @@
     <div class="span12">
         <div class="contactlist">
             <div class="container-contact" data-ng-repeat="contact in contacts">
-                <div class="contact">{{contact.firstName}}</div>
+                <div class="contact">
+                    <img data-ng-src="{{contact.image}}" />
+                </div>
             </div>
         </div>
     </div>
