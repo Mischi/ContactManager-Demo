@@ -27,7 +27,7 @@ angular.module('contactmanager')
                 options.quality = options.quality || 0.7;
 
                 var canvas = getResizeArea();
-                
+
                 var height = origImage.height;
                 var width = origImage.width;
 
@@ -71,7 +71,7 @@ angular.module('contactmanager')
                 template: '<div>' +
                             '<input id="{{inputId}}" type="file">' +
                             '<div>' +
-                                '<img ng-show="resizeImage" ng-src="{{resizedImageUrl}}" type="{{image.type}}">' +
+                                '<img ng-show="resizeImage" ng-src="{{resizeImage.url}}" type="{{image.type}}">' +
                             '</div>' +
                           '</div>',
                 link: function postLink(scope, element, attrs) {
@@ -93,7 +93,9 @@ angular.module('contactmanager')
 
                             //create Blob from loaded ArrayBuffer
                             var origImageBlob = new Blob([new Int8Array(e.target.result)], { type: image.type });
-                            var origImageUrl = URL.createObjectURL(origImageBlob);
+
+                            //attach url to origImageBlob
+                            origImageBlob.url = URL.createObjectURL(origImageBlob);
 
                             //attach image name to origImageBlob
                             origImageBlob.name = image.name;
@@ -102,18 +104,17 @@ angular.module('contactmanager')
                             var origImage = new Image();
                             origImage.onload = function () {
                                 resizeImage(origImage, {
-                                    maxHeight: scope.resizeMaxHeight, 
+                                    maxHeight: scope.resizeMaxHeight,
                                     maxWidth: scope.resizeMaxWidth,
                                     quality: scope.resizeQuality
                                 }, function (resizedImageBlob) {
-                                    var resizedImageUrl = URL.createObjectURL(resizedImageBlob);
+                                    //attach url to resizedImageBlob
+                                    resizedImageBlob.url = URL.createObjectURL(resizedImageBlob);
 
                                     //attach image name to resizedImageBlob
                                     resizedImageBlob.name = image.name;
 
                                     scope.$apply(function () {
-                                        scope.resizedImageUrl = resizedImageUrl;
-                                                        
                                         scope.originalImage = origImageBlob;
                                         scope.resizeImage = resizedImageBlob;
                                     });
@@ -121,7 +122,7 @@ angular.module('contactmanager')
                             };
 
                             //load origImage into image element
-                            origImage.src = origImageUrl;
+                            origImage.src = origImageBlob.url;
                         };
 
                         // Read in the image file as ArrayBuffer.                       

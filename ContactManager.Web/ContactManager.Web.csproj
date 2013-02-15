@@ -396,7 +396,7 @@
     <Content Include="Scripts\app\controllers\homeCtrl.js" />
     <Content Include="Scripts\app\controllers\navigationCtrl.js" />
     <Content Include="Scripts\app\controllers\contactCtrl.js" />
-    <Content Include="Scripts\app\directives\fileupload.js" />
+    <Content Include="Scripts\app\directives\imageupload.js" />
     <Content Include="Scripts\app\directives\sidebar.js" />
     <Content Include="Scripts\app\services\contactService.js" />
     <Content Include="Scripts\angular-1.1.2\angular.min.js.map">
