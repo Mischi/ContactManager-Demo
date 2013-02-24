@@ -21,7 +21,7 @@ exclude = [
 
 // test results reporter to use
 // possible values: dots || progress
-reporter = 'progress';
+reporters = ['progress'];
 
 
 proxies = {
