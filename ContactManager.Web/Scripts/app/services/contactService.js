@@ -22,6 +22,9 @@
                             return $http.post(contactRestEndpoint, contact);
                         });
                     }
+                    else {
+                        return $http.post(contactRestEndpoint, contact);
+                    }
                 }
             };
         }

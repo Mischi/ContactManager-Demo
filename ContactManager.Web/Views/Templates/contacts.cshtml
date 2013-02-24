@@ -6,7 +6,7 @@
         <div class="contactlist">
             <div class="container-contact" data-ng-repeat="contact in contacts">
                 <div class="contact">
-                    <img data-ng-src="{{contact.image}}" />
+                    <img data-ng-src="{{contact.image || placeholder}}" />
                 </div>
             </div>
         </div>

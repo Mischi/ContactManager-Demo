@@ -5,6 +5,8 @@
 
             var contacts = $scope.contacts = [];
 
+            $scope.placeholder = 'content/images/placeholder.png';
+
             contactService.getAllContacts().then(function (result) {
                 result.data.forEach(function (contact) {
                     contacts.push(contact);

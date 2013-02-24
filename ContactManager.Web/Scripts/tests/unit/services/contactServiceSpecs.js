@@ -66,6 +66,16 @@ describe('ContactsService', function () {
         //Assert
         expect(savedContact).toEqual(expected);
     });
+
+    xit('should save contact.image to backend when saveContact was called', function () {
+        var arrbuf = new Int8Array(new ArrayBuffer(0));
+        var blob = new Blob([arrbuf], { type: 'image/jpeg' });
+        blob.name = 'testfile.jpg';
+        
+        var contact = { firstName: 'Mischi', image: blob };
+
+        
+    });
 });
 
 

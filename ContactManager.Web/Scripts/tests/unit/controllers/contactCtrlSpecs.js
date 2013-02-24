@@ -89,4 +89,9 @@ describe('ContactCtrl', function () {
         expect(scope.contacts[0]).toEqual(expected);
     });
 
+    it('should attach the placeholder image url to $scope.placeholder', function () {
+        //Assert
+        expect(scope.placeholder).toBe('content/images/placeholder.png');
+    });
+
 });
