@@ -19,7 +19,9 @@ files = [
 
 preprocessors = {
     '**/Scripts/app/app.js': 'coverage',
-    '**/Scripts/app/**/*.js': 'coverage'
+    '**/Scripts/app/controllers/*.js': 'coverage',
+    '**/Scripts/app/directives/*.js': 'coverage',
+    '**/Scripts/app/services/*.js': 'coverage'
 };
 
 
