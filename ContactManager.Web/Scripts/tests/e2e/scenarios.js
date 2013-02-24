@@ -44,16 +44,30 @@ describe('ContactManager App', function() {
             expect(repeater('.container-contact').count()).toEqual(2);
         });
 
-        it('should add new contact', function () {
-            expect(repeater('.container-contact').count()).toEqual(2);
+        describe('Add Contact', function () {
 
-            element('#add-contact').click();
-            input('data.firstName').enter('third');
-            input('data.lastName').enter('user');
-            input('data.age').enter('3');
-            element('#add-contact-save').click();
+            beforeEach(function () {
+                expect(repeater('.container-contact').count()).toEqual(2);
 
-            expect(repeater('.container-contact').count()).toEqual(3);
+                element('#add-contact').click();
+                input('data.firstName').enter('third');
+                input('data.lastName').enter('user');
+                input('data.age').enter('3');
+            });
+
+            it('should add new contact', function () {
+                element('#add-contact-save').click();
+
+                expect(repeater('.container-contact').count()).toEqual(3);
+            });
+
+            xit('should add new contact with image', function () {
+                input('').enter('');
+                element('#add-contact-save').click();
+
+                expect(repeater('.container-contact').count()).toEqual(3);
+            });
+
         });
 
     });
